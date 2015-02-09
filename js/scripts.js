@@ -10,21 +10,19 @@ var queenAttack = function(position1, position2) {
 
 $(document).ready(function() {
   $('form#queen-attack').submit(function(event) {
-    var position1 = $('input#position1').split(',').map(Number).val();
-    var position2 = $('input#position2').split(',').map(Number).val();
+    var position1 = $('input#position1').val().split(',').map(Number);
+    var position2 = $('input#position2').val().split(',').map(Number);
 
     var result = queenAttack(position1, position2);
-debugger;    
-alert('We made it to end of variables being stated');
+
     $('.position1').text(position1);
     $('.position2').text(position2);
       if (result) {
-        $(".wins").text("won the f'n game! BoOYAH!")
+        $(".wins").text(" killed an innocent chess piece. I hope you are happy.")
       } else {
-        $(".wins").text("lost sucka!")
+        $(".wins").text(" have lived to be hunted another game!")
       }
 
-alert('We made it to end of if else statements');
       $("#result").show();
       event.preventDefault();
     });
