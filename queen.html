@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Queen Attack!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This is one Queen you don't want to mess with.</h1>
+
+      <form id="queen-attack">
+        <div class="form-group">
+          <label for="position1">Enter position one:</label>
+          <input id="position1" type="text">
+        </div>
+        <div class="form-group">
+          <label for="position2">Enter position two:</label>
+          <input id="position2" type="text">
+        </div>
+
+        <button type="submit" class="btn">Kill!</button>
+      </form>
+
+      <div id="result">
+        <p>When the positions are position one:<span class="position1"></span>and position two:<span class="position2"> </span>you have<span class="wins"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
